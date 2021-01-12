@@ -22,9 +22,9 @@ const TodoList = (props) => {
           );
         })}
       </div>
-      <button onClick={handleClick} className='clear-btn'>
-        Clear Completed Tasks
-      </button>
+      <div className='clear-btn'>
+        <button onClick={handleClick}>Clear Completed Tasks</button>
+      </div>
     </div>
   );
 };
