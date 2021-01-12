@@ -10,15 +10,18 @@ const TodoList = (props) => {
 
   return (
     <div>
-      {props.tasks.map((item) => {
-        return (
-          <Todo
-            handleItemToggle={props.handleItemToggle}
-            key={item.id}
-            item={item}
-          />
-        );
-      })}
+      <h1 className='title'>Todo List</h1>
+      <div className='task-container'>
+        {props.tasks.map((item) => {
+          return (
+            <Todo
+              handleItemToggle={props.handleItemToggle}
+              key={item.id}
+              item={item}
+            />
+          );
+        })}
+      </div>
       <button onClick={handleClick} className='clear-btn'>
         Clear Completed Tasks
       </button>
