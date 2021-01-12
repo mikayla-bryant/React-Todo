@@ -30,7 +30,7 @@ class TodoForm extends React.Component {
           value={this.state.inputValue}
           onChange={this.handleChanges}
           type='text'
-          name='item'
+          name='task'
         />
         <button>Add</button>
       </form>

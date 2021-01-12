@@ -41,9 +41,9 @@ class App extends Component {
     });
   };
 
-  handleItemAdd = (itemName) => {
+  handleItemAdd = (itemTask) => {
     const item = {
-      name: itemName,
+      task: itemTask,
       id: this.state.tasks.length,
       purchased: false,
     };
